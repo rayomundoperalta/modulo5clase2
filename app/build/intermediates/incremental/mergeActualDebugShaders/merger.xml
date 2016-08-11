@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/main/shaders"/></dataSet><dataSet config="actual"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/actual/shaders"/></dataSet><dataSet config="debug"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/debug/shaders"/></dataSet><dataSet config="actualDebug"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/actualDebug/shaders"/></dataSet></merger>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/main/jniLibs"/></dataSet><dataSet config="actual"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/actual/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/debug/jniLibs"/></dataSet><dataSet config="actualDebug"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/actualDebug/jniLibs"/></dataSet></merger>

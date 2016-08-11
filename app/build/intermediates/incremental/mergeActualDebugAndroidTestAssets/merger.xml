@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/androidTest/assets"/><source path="/Users/rayo/modulo5clase2/nasaapp/app/build/generated/assets/shaders/androidTest/actual/debug"/></dataSet><dataSet config="actual"><source path="/Users/rayo/modulo5clase2/nasaapp/app/src/androidTestActual/assets"/></dataSet></merger>

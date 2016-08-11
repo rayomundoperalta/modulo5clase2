@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_default.xml"
+    }
+]
