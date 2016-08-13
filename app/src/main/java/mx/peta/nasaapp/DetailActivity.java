@@ -2,6 +2,7 @@ package mx.peta.nasaapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -38,6 +39,8 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detailactivity);
         ButterKnife.bind(this);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         photo = (Photo) getIntent().getExtras().getSerializable("photo");
         photoId.setText("Photo: " + photo.getId().toString());
         photoSol.setText("SOL: " + photo.getSol().toString());

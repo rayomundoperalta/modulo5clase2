@@ -41,6 +41,11 @@ public class NasaApodAdapter extends RecyclerView.Adapter<NasaApodViewHolder> {
         holder.setItemClick(photo, onItemClickListener);
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+    }
+
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }

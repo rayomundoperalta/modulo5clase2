@@ -15,7 +15,7 @@ import mx.peta.nasaapp.R;
 public class NasaApodViewHolder_ViewBinding<T extends NasaApodViewHolder> implements Unbinder {
   protected T target;
 
-  private View view2131427435;
+  private View view2131493011;
 
   public NasaApodViewHolder_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
@@ -23,7 +23,7 @@ public class NasaApodViewHolder_ViewBinding<T extends NasaApodViewHolder> implem
     View view;
     view = finder.findRequiredView(source, R.id.item_apod_image, "field 'itemApodImage' and method 'onViewClick'");
     target.itemApodImage = finder.castView(view, R.id.item_apod_image, "field 'itemApodImage'", SimpleDraweeView.class);
-    view2131427435 = view;
+    view2131493011 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,8 +41,8 @@ public class NasaApodViewHolder_ViewBinding<T extends NasaApodViewHolder> implem
     target.itemApodImage = null;
     target.itemApodText = null;
 
-    view2131427435.setOnClickListener(null);
-    view2131427435 = null;
+    view2131493011.setOnClickListener(null);
+    view2131493011 = null;
 
     this.target = null;
   }

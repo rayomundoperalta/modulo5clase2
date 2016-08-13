@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.12.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="40e5cb8708fc25fe57cb403cc82e9ef98376b648">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fbcore-0.12.0_a73d55075ff9d27f2900c040e99ddc198045b627.jar" />
+    </item>
+    <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -30,11 +37,25 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-0.12.0_ddc26432a30be0d79ed17554b209fea1a2105122.jar" />
     </item>
     <item
+        jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/converter-gson-2.0.2_00d116ed84e4e48777d5720b0f3dfd557d42ee35.jar" />
+    </item>
+    <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.2.1/jars/classes.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="ca5e58104f56f918f0fb3a5b1b371ab599ae56b2">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.jakewharton-butterknife-8.2.1_6710f17cf99825a322ff2a58792989b3bb3190d6.jar" />
+    </item>
+    <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-vector-drawable-24.1.1_850198c21ded3969865edbc165f42ccfdd4c5fb4.jar" />
     </item>
     <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
@@ -58,10 +79,17 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/internal_impl-24.1.1_408885096ff9e3f97ab531c21ba075ba70abba2e.jar" />
     </item>
     <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/incremental-classes/actual/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f2abd05fa0c15a4a81ed1b5139cb213884d6e78d">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" />
+    </item>
+    <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/incremental-runtime-classes/actual/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="224c5a20ed4bcf4b1f7fa7c2f5779103eaea3a19">
+        sha1="1ddd73a239836d87f9ff3b93a822788523a3ff20">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/instant-run_d36cc9b1dda884a6354915717bc0d49e5f5de062.jar" />
     </item>
     <item
@@ -72,11 +100,25 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/okhttp-3.3.1_8ed2a54ba2f5e366064444cd0fac5c497d8b7fbf.jar" />
     </item>
     <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-design-24.1.1_e9fa66008f1a4b2aba7c2470b2625b2b1d46bb75.jar" />
+    </item>
+    <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/library-2.4.0_66a99a486808554bb4e4f3c2d340132d856c1197.jar" />
+    </item>
+    <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-recyclerview-v7-24.1.1_b7590d388a9073cf39a64e341513570183a1416c.jar" />
     </item>
     <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
@@ -114,6 +156,13 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-drawee-0.12.0_711604a428b541c9fe954167d2068f9116f28b5f.jar" />
     </item>
     <item
+        jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/okio-1.8.0_78858104d878bcdf24257e6dab70635cd9f6ad19.jar" />
+    </item>
+    <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -128,55 +177,6 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-base-0.12.0_c04dc46168d25e714f655cd7d197409c453d94ba.jar" />
     </item>
     <item
-        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-animated-vector-drawable-24.1.1_f99ce33e9544613bc912815d1eff36594a03de9d.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.12.0/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="40e5cb8708fc25fe57cb403cc82e9ef98376b648">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fbcore-0.12.0_a73d55075ff9d27f2900c040e99ddc198045b627.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/converter-gson-2.0.2_00d116ed84e4e48777d5720b0f3dfd557d42ee35.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-vector-drawable-24.1.1_850198c21ded3969865edbc165f42ccfdd4c5fb4.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/incremental-classes/actual/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="d58c16b42760d778ad6d0c5c0db2494e514e9e73">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-recyclerview-v7-24.1.1_b7590d388a9073cf39a64e341513570183a1416c.jar" />
-    </item>
-    <item
-        jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/okio-1.8.0_78858104d878bcdf24257e6dab70635cd9f6ad19.jar" />
-    </item>
-    <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -189,6 +189,13 @@
         revision="24.0.0"
         sha1="6d7d803871e3203465f71a163e7af104f807b446">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-v4-24.1.1_dc056a253f135951cd70cc773cf45f7cd2ee201f.jar" />
+    </item>
+    <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-animated-vector-drawable-24.1.1_f99ce33e9544613bc912815d1eff36594a03de9d.jar" />
     </item>
     <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.2.1/d6f54d76edfbe779a50a8636b10fd3f555d8f780/butterknife-annotations-8.2.1.jar"
