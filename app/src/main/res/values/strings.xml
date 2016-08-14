@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SpaceImages</string>
+    <string name="facebook_app_id">1076572302432193</string>
+    <string name="title_activity_fblogin_activv">FBLoginActivv</string>
+    <string name="title_activity_fblogin">FBLoginActivity</string>
 </resources>

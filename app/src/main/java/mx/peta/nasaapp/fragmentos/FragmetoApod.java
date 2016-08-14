@@ -1,9 +1,15 @@
 package mx.peta.nasaapp.fragmentos;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -32,6 +38,13 @@ public class FragmetoApod extends Fragment {
     @BindView(R.id.frag_apod_fecha) TextView fecha;
     @BindView(R.id.frag_apod_explicacion) TextView explicacion;
     @BindView(R.id.frag_apod_copyright) TextView copyright;
+    private String imageurl;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +67,7 @@ public class FragmetoApod extends Fragment {
                 fecha.setText(response.body().getDate());
                 explicacion.setText(response.body().getExplanation());
                 copyright.setText("(C) " + response.body().getCopyright());
+                imageurl = response.body().getUrl();
             }
 
             @Override
@@ -62,5 +76,32 @@ public class FragmetoApod extends Fragment {
             }
         });
         return view;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.share_today_apod:
+                Snackbar.make(getView(), "Menu share today", Snackbar.LENGTH_LONG).show();
+                shareText("Diplomado Unam " + imageurl);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.apod_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    private void shareText(String text) {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, text);
+        startActivity(Intent.createChooser(shareIntent, "compartir"));
     }
 }

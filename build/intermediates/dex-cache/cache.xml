@@ -23,6 +23,13 @@
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-appindexing-8.1.0_5a13db729b5368f0aa56f9b06a41ecd7b87db4f8.jar" />
     </item>
     <item
+        jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/bolts-applinks-1.4.0_4d548051fd64ac05bd4daf1b8e9acd01e76b9a1d.jar" />
+    </item>
+    <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.12.0/jars/classes.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -82,14 +89,14 @@
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/incremental-classes/actual/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="f2abd05fa0c15a4a81ed1b5139cb213884d6e78d">
+        sha1="fedd0e79c22c01aa078ede5fbfb6e3c945aee822">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" />
     </item>
     <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/incremental-runtime-classes/actual/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="1ddd73a239836d87f9ff3b93a822788523a3ff20">
+        sha1="e0a568ac43a0549c25d7d04788719e613c307c42">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/instant-run_d36cc9b1dda884a6354915717bc0d49e5f5de062.jar" />
     </item>
     <item
@@ -105,6 +112,13 @@
         revision="24.0.0"
         sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-design-24.1.1_e9fa66008f1a4b2aba7c2470b2625b2b1d46bb75.jar" />
+    </item>
+    <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.facebook.android-facebook-android-sdk-4.14.1_9f64d314b0b75fb3c8d1538d349d7e6cb53c41b1.jar" />
     </item>
     <item
         jar="/Users/rayo/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -189,6 +203,13 @@
         revision="24.0.0"
         sha1="6d7d803871e3203465f71a163e7af104f807b446">
         <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-v4-24.1.1_dc056a253f135951cd70cc773cf45f7cd2ee201f.jar" />
+    </item>
+    <item
+        jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/pre-dexed/actual/debug/com.android.support-customtabs-23.4.0_0a2adc1007772d921929fdce9214b50c5f29f57b.jar" />
     </item>
     <item
         jar="/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"

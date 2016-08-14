@@ -4,27 +4,27 @@
     api-level="19"
     density="xxhdpi"
     format="7"
-    timestamp="1262164699328462"
+    timestamp="1284013422947792"
     token="-4408487295596483641" >
 
     <task
         name="javac"
-        duration="1823" />
+        duration="2061" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="273" />
+        duration="470" />
     <task
         name="verifier"
-        duration="78" />
+        duration="116" />
 
     <artifact
         location="/Users/rayo/modulo5clase2/nasaapp/app/build/outputs/apk/app-actual-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1262164699328462" >
+    <build timestamp="1284013422947792" >
         <artifact
             location="/Users/rayo/modulo5clase2/nasaapp/app/build/outputs/apk/app-actual-debug.apk"
             type="MAIN" />

@@ -368,8 +368,331 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2065,
+                    "endColumn": 168,
+                    "endOffset": 2229
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 168,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2234,
+                    "endColumn": 115,
+                    "endOffset": 2345
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 115,
+                        "endOffset": 335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2350,
+                    "endColumn": 127,
+                    "endOffset": 2473
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 340,
+                        "endColumn": 127,
+                        "endOffset": 463
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2478,
+                    "endColumn": 94,
+                    "endOffset": 2568
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 468,
+                        "endColumn": 94,
+                        "endOffset": 558
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2573,
+                    "endColumn": 75,
+                    "endOffset": 2644
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 563,
+                        "endColumn": 75,
+                        "endOffset": 634
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2649,
+                    "endColumn": 76,
+                    "endOffset": 2721
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 639,
+                        "endColumn": 76,
+                        "endOffset": 711
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2726,
+                    "endColumn": 58,
+                    "endOffset": 2780
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 716,
+                        "endColumn": 58,
+                        "endOffset": 770
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2785,
+                    "endColumn": 71,
+                    "endOffset": 2852
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 775,
+                        "endColumn": 71,
+                        "endOffset": 842
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2857,
+                    "endColumn": 74,
+                    "endOffset": 2927
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 847,
+                        "endColumn": 74,
+                        "endOffset": 917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2932,
+                    "endColumn": 96,
+                    "endOffset": 3024
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 922,
+                        "endColumn": 96,
+                        "endOffset": 1014
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3029,
+                    "endColumn": 74,
+                    "endOffset": 3099
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1019,
+                        "endColumn": 74,
+                        "endOffset": 1089
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3104,
+                    "endColumn": 74,
+                    "endOffset": 3174
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1094,
+                        "endColumn": 74,
+                        "endOffset": 1164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3179,
+                    "endColumn": 87,
+                    "endOffset": 3262
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1169,
+                        "endColumn": 87,
+                        "endOffset": 1252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3267,
+                    "endColumn": 102,
+                    "endOffset": 3365
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1257,
+                        "endColumn": 102,
+                        "endOffset": 1355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3370,
+                    "endColumn": 65,
+                    "endOffset": 3431
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1360,
+                        "endColumn": 65,
+                        "endOffset": 1421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3436,
+                    "endColumn": 65,
+                    "endOffset": 3497
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1426,
+                        "endColumn": 65,
+                        "endOffset": 1487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3502,
+                    "endColumn": 124,
+                    "endOffset": 3622
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1492,
+                        "endColumn": 124,
+                        "endOffset": 1612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3627,
                     "endColumn": 195,
-                    "endOffset": 2256
+                    "endOffset": 3818
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -384,11 +707,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2261,
+                    "startOffset": 3823,
                     "endColumn": 184,
-                    "endOffset": 2441
+                    "endOffset": 4003
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -403,11 +726,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2446,
+                    "startOffset": 4008,
                     "endColumn": 125,
-                    "endOffset": 2567
+                    "endOffset": 4129
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -422,11 +745,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2572,
+                    "startOffset": 4134,
                     "endColumn": 271,
-                    "endOffset": 2839
+                    "endOffset": 4401
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -441,11 +764,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2844,
+                    "startOffset": 4406,
                     "endColumn": 128,
-                    "endOffset": 2968
+                    "endOffset": 4530
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -460,11 +783,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2973,
+                    "startOffset": 4535,
                     "endColumn": 191,
-                    "endOffset": 3160
+                    "endOffset": 4722
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -479,11 +802,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3165,
+                    "startOffset": 4727,
                     "endColumn": 126,
-                    "endOffset": 3287
+                    "endOffset": 4849
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -498,11 +821,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3292,
+                    "startOffset": 4854,
                     "endColumn": 175,
-                    "endOffset": 3463
+                    "endOffset": 5025
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -517,11 +840,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3468,
+                    "startOffset": 5030,
                     "endColumn": 130,
-                    "endOffset": 3594
+                    "endOffset": 5156
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -536,11 +859,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3599,
+                    "startOffset": 5161,
                     "endColumn": 217,
-                    "endOffset": 3812
+                    "endOffset": 5374
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -555,11 +878,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3817,
+                    "startOffset": 5379,
                     "endColumn": 216,
-                    "endOffset": 4029
+                    "endOffset": 5591
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -574,11 +897,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4034,
+                    "startOffset": 5596,
                     "endColumn": 127,
-                    "endOffset": 4157
+                    "endOffset": 5719
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -593,11 +916,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4162,
+                    "startOffset": 5724,
                     "endColumn": 172,
-                    "endOffset": 4330
+                    "endOffset": 5892
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -612,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4335,
+                    "startOffset": 5897,
                     "endColumn": 121,
-                    "endOffset": 4452
+                    "endOffset": 6014
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -631,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4457,
+                    "startOffset": 6019,
                     "endColumn": 153,
-                    "endOffset": 4606
+                    "endOffset": 6168
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -650,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4611,
+                    "startOffset": 6173,
                     "endColumn": 164,
-                    "endOffset": 4771
+                    "endOffset": 6333
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -669,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4776,
+                    "startOffset": 6338,
                     "endColumn": 116,
-                    "endOffset": 4888
+                    "endOffset": 6450
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -688,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4893,
+                    "startOffset": 6455,
                     "endColumn": 167,
-                    "endOffset": 5056
+                    "endOffset": 6618
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -707,11 +1030,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 5061,
+                    "startOffset": 6623,
                     "endColumn": 130,
-                    "endOffset": 5187
+                    "endOffset": 6749
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -726,11 +1049,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5192,
+                    "startOffset": 6754,
                     "endColumn": 179,
-                    "endOffset": 5367
+                    "endOffset": 6929
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -745,11 +1068,11 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5372,
+                    "startOffset": 6934,
                     "endColumn": 130,
-                    "endOffset": 5498
+                    "endOffset": 7060
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -764,11 +1087,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5503,
+                    "startOffset": 7065,
                     "endColumn": 147,
-                    "endOffset": 5646
+                    "endOffset": 7208
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -783,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5651,
+                    "startOffset": 7213,
                     "endColumn": 248,
-                    "endOffset": 5895
+                    "endOffset": 7457
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -802,11 +1125,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5900,
+                    "startOffset": 7462,
                     "endColumn": 122,
-                    "endOffset": 6018
+                    "endOffset": 7580
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -821,11 +1144,11 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6023,
+                    "startOffset": 7585,
                     "endColumn": 112,
-                    "endOffset": 6131
+                    "endOffset": 7693
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -840,11 +1163,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6136,
+                    "startOffset": 7698,
                     "endColumn": 194,
-                    "endOffset": 6326
+                    "endOffset": 7888
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -859,11 +1182,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6331,
+                    "startOffset": 7893,
                     "endColumn": 129,
-                    "endOffset": 6456
+                    "endOffset": 8018
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -878,11 +1201,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6461,
+                    "startOffset": 8023,
                     "endColumn": 219,
-                    "endOffset": 6676
+                    "endOffset": 8238
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -897,11 +1220,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6681,
+                    "startOffset": 8243,
                     "endColumn": 138,
-                    "endOffset": 6815
+                    "endOffset": 8377
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -916,11 +1239,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6820,
+                    "startOffset": 8382,
                     "endColumn": 96,
-                    "endOffset": 6912
+                    "endOffset": 8474
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-cs/common_strings.xml",
@@ -935,11 +1258,30 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6917,
+                    "startOffset": 8479,
+                    "endColumn": 62,
+                    "endOffset": 8537
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1617,
+                        "endColumn": 62,
+                        "endOffset": 1675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 8542,
                     "endColumn": 100,
-                    "endOffset": 7013
+                    "endOffset": 8638
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-cs/values-cs.xml",

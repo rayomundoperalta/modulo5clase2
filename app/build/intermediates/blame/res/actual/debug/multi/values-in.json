@@ -938,8 +938,27 @@
                     "startLine": 51,
                     "startColumn": 4,
                     "startOffset": 6890,
+                    "endColumn": 60,
+                    "endOffset": 6946
+                },
+                "from": {
+                    "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/res/values-in/values-in.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 60,
+                        "endOffset": 111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 6951,
                     "endColumn": 100,
-                    "endOffset": 6986
+                    "endOffset": 7047
                 },
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-in/values-in.xml",

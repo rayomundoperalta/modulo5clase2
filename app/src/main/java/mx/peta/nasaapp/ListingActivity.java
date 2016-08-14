@@ -1,6 +1,9 @@
 package mx.peta.nasaapp;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -13,9 +16,23 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import com.facebook.AccessToken;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.drawee.view.SimpleDraweeView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -49,6 +66,42 @@ public class ListingActivity extends AppCompatActivity {
         setContentView(R.layout.listing_navigation_activity);
         ButterKnife.bind(this);
 
+        GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
+            @Override
+            public void onCompleted(JSONObject object, GraphResponse responce) {
+                try {
+                    SimpleDraweeView userImage = (SimpleDraweeView) findViewById(R.id.simpleDrawer);
+                    userImage.setImageURI("http://graph.facebook.com/" + object.getString("id") + "/picture?type=large");
+                    TextView userName = (TextView) findViewById(R.id.simpleDrawer_textview);
+                    userName.setText(object.getString("name"));
+                    Log.d("name", object.getString("name"));
+                    Log.d("id", object.getString("id"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        request.executeAsync();
+
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo(
+                    // "com.facebook.samples.hellofacebook",
+                    "mx.peta.nasaapp",
+                    PackageManager.GET_SIGNATURES);
+            Log.d("KeyHash:", "<---------------------");
+            Snackbar.make(contentView, "<-------------------",Snackbar.LENGTH_INDEFINITE).show();
+
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                Snackbar.make(contentView, Base64.encodeToString(md.digest(), Base64.DEFAULT), Snackbar.LENGTH_LONG).show();
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+
+        } catch (NoSuchAlgorithmException e) {
+
+        }
         // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -152,4 +205,6 @@ public class ListingActivity extends AppCompatActivity {
 
 
     }
+
+
 }
