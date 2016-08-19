@@ -29,13 +29,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="mx.peta.nasaapp.ListingActivity" >
-        </activity>
+        <activity android:name="mx.peta.nasaapp.ListingActivity" />
         <activity android:name="mx.peta.nasaapp.DetailActivity" />
-        <activity
-            android:name="mx.peta.nasaapp.login.FBLoginActivv"
-            android:label="@string/title_activity_fblogin_activv"
-            android:theme="@style/AppTheme" />
         <activity
             android:name="mx.peta.nasaapp.login.FBLoginActivity"
             android:label="@string/title_activity_fblogin"

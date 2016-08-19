@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:5:
 	android:name
 		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:7:5-50:19
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:7:5-44:19
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:23:5-20
@@ -75,50 +75,42 @@ MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/rayo/mo
 	android:name
 		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:22:13-58
 activity#mx.peta.nasaapp.ListingActivity
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:25:9-27:20
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:25:9-52
 	android:name
 		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:25:19-50
 activity#mx.peta.nasaapp.DetailActivity
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:28:9-52
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:26:9-52
 	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:28:19-49
-activity#mx.peta.nasaapp.login.FBLoginActivv
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:29:9-32:47
-	android:label
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:31:13-66
-	android:theme
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:32:13-44
-	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:30:13-48
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:26:19-49
 activity#mx.peta.nasaapp.login.FBLoginActivity
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:33:9-42:20
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:27:9-36:20
 	android:label
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:35:13-59
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:29:13-59
 	android:theme
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:30:13-44
 	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:34:13-50
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:28:13-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:37:13-41:29
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:38:17-69
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:38:25-66
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:40:17-77
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:40:27-74
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.facebook.FacebookActivity
-ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:44:9-48:48
+ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:38:9-42:48
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/AndroidManifest.xml:29:9-32:75
 	android:label
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:42:13-45
 	android:configChanges
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:45:13-114
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:39:13-114
 	android:theme
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:47:13-72
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:41:13-72
 	android:name
-		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:44:19-63
+		ADDED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml:38:19-63
 uses-sdk
 INJECTED from /Users/rayo/modulo5clase2/nasaapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/AndroidManifest.xml:21:5-23:78

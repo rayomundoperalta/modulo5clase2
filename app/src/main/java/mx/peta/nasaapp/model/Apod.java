@@ -8,6 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Apod {
 
+    @SerializedName("id")
+    private int id;
     @SerializedName("copyright")
     private String copyright;
     @SerializedName("date")
@@ -25,6 +27,23 @@ public class Apod {
     @SerializedName("url")
     private String url;
 
+    /**
+     *
+     * @return
+     * The id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     *
+     * @param id
+     * The id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
     /**
      *
      * @return

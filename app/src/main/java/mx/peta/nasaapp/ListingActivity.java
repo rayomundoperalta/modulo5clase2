@@ -38,6 +38,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import mx.peta.nasaapp.data.ApodService;
 import mx.peta.nasaapp.data.Data;
+import mx.peta.nasaapp.fragmentos.FragmentoFavorite;
 import mx.peta.nasaapp.fragmentos.FragmentoMarsRover;
 import mx.peta.nasaapp.fragmentos.FragmetoApod;
 import mx.peta.nasaapp.model.MarsRoverImages2;
@@ -83,25 +84,6 @@ public class ListingActivity extends AppCompatActivity {
         });
         request.executeAsync();
 
-        try {
-            PackageInfo info = getPackageManager().getPackageInfo(
-                    // "com.facebook.samples.hellofacebook",
-                    "mx.peta.nasaapp",
-                    PackageManager.GET_SIGNATURES);
-            Log.d("KeyHash:", "<---------------------");
-            Snackbar.make(contentView, "<-------------------",Snackbar.LENGTH_INDEFINITE).show();
-
-            for (Signature signature : info.signatures) {
-                MessageDigest md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-                Snackbar.make(contentView, Base64.encodeToString(md.digest(), Base64.DEFAULT), Snackbar.LENGTH_LONG).show();
-            }
-        } catch (PackageManager.NameNotFoundException e) {
-
-        } catch (NoSuchAlgorithmException e) {
-
-        }
         // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -111,18 +93,20 @@ public class ListingActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.today_apod_item:
                         // Snackbar.make(findViewById(android.R.id.content), "today apod", Snackbar.LENGTH_LONG).show();
-                        Snackbar.make(contentView, "today apod", Snackbar.LENGTH_LONG).show();
+                        //Snackbar.make(contentView, "Today APOD", Snackbar.LENGTH_LONG).show();
                         FragmetoApod fApod = new FragmetoApod();
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fApod).commit();
                         return true;
                     case R.id.mars_rover_item:
                         // Snackbar.make(findViewById(android.R.id.content), "mars rover", Snackbar.LENGTH_LONG).show();
-                        Snackbar.make(contentView, "mars rover", Snackbar.LENGTH_LONG).show();
+                        //Snackbar.make(contentView, "Mars Rover", Snackbar.LENGTH_LONG).show();
                         FragmentoMarsRover fMarsRover = new FragmentoMarsRover();
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fMarsRover).commit();
                         return true;
                     case R.id.favorite_item:
-                        Snackbar.make(contentView, "favorite", Snackbar.LENGTH_LONG).show();
+                        //Snackbar.make(contentView, "Favorite", Snackbar.LENGTH_LONG).show();
+                        FragmentoFavorite fFavorite = new FragmentoFavorite();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fFavorite).commit();
                         return true;
                     default:
                         return false;
@@ -143,8 +127,6 @@ public class ListingActivity extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-
-
 
         /*
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -189,22 +171,15 @@ public class ListingActivity extends AppCompatActivity {
             }
         });
         */
-
     }
 
     @Override
     public void onStart() {
         super.onStart();
-
-
     }
 
     @Override
     public void onStop() {
         super.onStop();
-
-
     }
-
-
 }

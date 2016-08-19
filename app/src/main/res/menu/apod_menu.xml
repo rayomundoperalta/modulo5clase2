@@ -8,5 +8,12 @@
         android:showAsAction="always"
         app:showAsAction="always"
         />
+    <item
+        android:id="@+id/favorito"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="dos"
+        android:showAsAction="always"
+        app:showAsAction="always"
+        />
 
 </menu>

@@ -52,7 +52,7 @@ public class FragmentoMarsRover extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(10, StaggeredGridLayoutManager.VERTICAL);
-        marsRoverListingRecycler.setLayoutManager(linearLayoutManager);
+        marsRoverListingRecycler.setLayoutManager(gridLayoutManager);
 
         final NasaApodAdapter nasaApodAdapter = new NasaApodAdapter();
 
@@ -74,7 +74,7 @@ public class FragmentoMarsRover extends Fragment {
 
         ApodService apodService = Data.getRetrofitInstance().create(ApodService.class);
 
-        Call<MarsRoverImages2> callMarsRovesImages = apodService.getMarsRovesImages2("1000", "1b0qt1wfXNdK7Pbz1E7kEETE3wDjAv6I6MA9dxz9");
+        Call<MarsRoverImages2> callMarsRovesImages = apodService.getMarsRovesImages2("1001", "1b0qt1wfXNdK7Pbz1E7kEETE3wDjAv6I6MA9dxz9");
 
         callMarsRovesImages.enqueue(new Callback<MarsRoverImages2>() {
             @Override

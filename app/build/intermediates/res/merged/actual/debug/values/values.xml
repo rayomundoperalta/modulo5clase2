@@ -415,7 +415,7 @@
     <string name="facebook_app_id">1076572302432193</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_fblogin">FBLoginActivity</string>
+    <string name="title_activity_fblogin">SpaceImages</string>
     <string name="title_activity_fblogin_activv">FBLoginActivv</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

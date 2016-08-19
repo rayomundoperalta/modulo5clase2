@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="19"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="1284013422947792"
+    timestamp="1419435341346601"
     token="-4408487295596483641" >
 
     <task
         name="javac"
-        duration="2061" />
+        duration="2508" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="470" />
+        duration="642" />
     <task
         name="verifier"
-        duration="116" />
+        duration="109" />
 
     <artifact
         location="/Users/rayo/modulo5clase2/nasaapp/app/build/outputs/apk/app-actual-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1284013422947792" >
+    <build timestamp="1419435341346601" >
         <artifact
             location="/Users/rayo/modulo5clase2/nasaapp/app/build/outputs/apk/app-actual-debug.apk"
             type="MAIN" />

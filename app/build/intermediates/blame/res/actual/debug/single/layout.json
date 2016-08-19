@@ -84,6 +84,10 @@
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/fragmento_favorite.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/layout/fragmento_favorite.xml"
+    },
+    {
         "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_select_dialog_material.xml"
     },
@@ -196,12 +200,12 @@
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/layout/listing_navigation_header.xml"
     },
     {
-        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/notification_template_part_time.xml",
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/activity_main.xml",
@@ -278,5 +282,9 @@
     {
         "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/design_navigation_item_header.xml",
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/layout/list_item.xml",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/layout/list_item.xml"
     }
 ]

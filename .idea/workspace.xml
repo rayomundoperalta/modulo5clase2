@@ -10,6 +10,14 @@
         <option name="packageNamePattern" value="" />
         <option name="pid" value="" />
       </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="SQL" />
+        <option name="name" value="SQL" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
     </filters>
   </component>
   <component name="AndroidLayouts">
@@ -19,58 +27,67 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="mx.peta.nasaapp" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="SQL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0749afbc-f6d8-41d9-8eab-b8d58da756f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_applinks_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/customtabs_23_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_14_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_fblogin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/mars_menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/APODDataSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/SqLiteHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/adapter/AdapterItemList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoFavorite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragmento_favorite.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/bolts-applinks-1.4.0_4d548051fd64ac05bd4daf1b8e9acd01e76b9a1d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/bolts-tasks-1.4.0_d4b7f358514d78af4ef7344186711413fe7b6229.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/butterknife-annotations-8.2.1_7fd0805db6a8ef754d12cd75bb5f5b337ee39205.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-animated-vector-drawable-24.1.1_f99ce33e9544613bc912815d1eff36594a03de9d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-appcompat-v7-24.1.1_6ab8ed2369649650ca94aef0755f737d70dc6c7a.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-cardview-v7-24.1.1_1c7af76b2a26963a000f597456ad12cbb01528d3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-customtabs-23.4.0_0a2adc1007772d921929fdce9214b50c5f29f57b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-design-24.1.1_e9fa66008f1a4b2aba7c2470b2625b2b1d46bb75.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-recyclerview-v7-24.1.1_b7590d388a9073cf39a64e341513570183a1416c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-v4-24.1.1_dc056a253f135951cd70cc773cf45f7cd2ee201f.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-vector-drawable-24.1.1_850198c21ded3969865edbc165f42ccfdd4c5fb4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.android-facebook-android-sdk-4.14.1_9f64d314b0b75fb3c8d1538d349d7e6cb53c41b1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-drawee-0.12.0_711604a428b541c9fe954167d2068f9116f28b5f.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fbcore-0.12.0_a73d55075ff9d27f2900c040e99ddc198045b627.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fresco-0.12.0_472821707fef0365a2ca4213f2e06095b5eebbc1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-0.12.0_ddc26432a30be0d79ed17554b209fea1a2105122.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-base-0.12.0_c04dc46168d25e714f655cd7d197409c453d94ba.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-appindexing-8.1.0_5a13db729b5368f0aa56f9b06a41ecd7b87db4f8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-basement-8.1.0_a5526878846090605d8c546c962340f73e148dcf.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.jakewharton-butterknife-8.2.1_6710f17cf99825a322ff2a58792989b3bb3190d6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/converter-gson-2.0.2_00d116ed84e4e48777d5720b0f3dfd557d42ee35.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/gson-2.6.1_210d699d4ec702748e51a62b97ee79f7776f0559.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run_d36cc9b1dda884a6354915717bc0d49e5f5de062.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/internal_impl-24.1.1_408885096ff9e3f97ab531c21ba075ba70abba2e.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/library-2.4.0_66a99a486808554bb4e4f3c2d340132d856c1197.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/logging-interceptor-3.3.1_179365f044a75f142686c8a4a4029252480af229.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/main_4767c59fb7fd760477f258e9cef5c22c2407c097.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okhttp-3.3.1_8ed2a54ba2f5e366064444cd0fac5c497d8b7fbf.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okio-1.8.0_78858104d878bcdf24257e6dab70635cd9f6ad19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/picasso-2.5.2_032597d390cad04db87eaf1ea1bfb90b01b846f3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/retrofit-2.1.0_898baf8d39bfbc02f06442891cf6b40b3facf0ec.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/support-annotations-24.1.1_1ec389d09fbe18fc06852e9e7cd98843f733fad9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/actual/debug/folders/1000/1f/main/classes.dex" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/design/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/cardview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/recyclerview/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/android/support/v7/recyclerview/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/facebook/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/facebook/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/facebook/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/com/facebook/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/DetailActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/DetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/DetailActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/DetailActivity_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/ListingActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/MainActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/MainActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$bool.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$layout.class" />
@@ -79,54 +96,28 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/app/NasaApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/app/NasaApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/login/FBLoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/login/FBLoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/model/Apod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/model/Apod.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/actual/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/actual/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/actual/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/actual/debug/instant-run.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/design/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/cardview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/recyclerview/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/android/support/v7/recyclerview/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/facebook/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/facebook/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/facebook/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/com/facebook/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/DetailActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/DetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/DetailActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/DetailActivity_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/ListingActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/MainActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/MainActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$bool.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$layout.class" />
@@ -135,84 +126,27 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/app/NasaApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/app/NasaApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/login/FBLoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/login/FBLoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/model/Apod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/model/Apod.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/bolts-tasks-1.4.0_d4b7f358514d78af4ef7344186711413fe7b6229.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/bolts-tasks-1.4.0_d4b7f358514d78af4ef7344186711413fe7b6229.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/butterknife-annotations-8.2.1_7fd0805db6a8ef754d12cd75bb5f5b337ee39205.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/butterknife-annotations-8.2.1_7fd0805db6a8ef754d12cd75bb5f5b337ee39205.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-animated-vector-drawable-24.1.1_f99ce33e9544613bc912815d1eff36594a03de9d.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-animated-vector-drawable-24.1.1_f99ce33e9544613bc912815d1eff36594a03de9d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-appcompat-v7-24.1.1_6ab8ed2369649650ca94aef0755f737d70dc6c7a.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-appcompat-v7-24.1.1_6ab8ed2369649650ca94aef0755f737d70dc6c7a.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-cardview-v7-24.1.1_1c7af76b2a26963a000f597456ad12cbb01528d3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-cardview-v7-24.1.1_1c7af76b2a26963a000f597456ad12cbb01528d3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-design-24.1.1_e9fa66008f1a4b2aba7c2470b2625b2b1d46bb75.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-design-24.1.1_e9fa66008f1a4b2aba7c2470b2625b2b1d46bb75.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-recyclerview-v7-24.1.1_b7590d388a9073cf39a64e341513570183a1416c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-recyclerview-v7-24.1.1_b7590d388a9073cf39a64e341513570183a1416c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-v4-24.1.1_dc056a253f135951cd70cc773cf45f7cd2ee201f.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-v4-24.1.1_dc056a253f135951cd70cc773cf45f7cd2ee201f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-vector-drawable-24.1.1_850198c21ded3969865edbc165f42ccfdd4c5fb4.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.android.support-support-vector-drawable-24.1.1_850198c21ded3969865edbc165f42ccfdd4c5fb4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-drawee-0.12.0_711604a428b541c9fe954167d2068f9116f28b5f.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-drawee-0.12.0_711604a428b541c9fe954167d2068f9116f28b5f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fbcore-0.12.0_a73d55075ff9d27f2900c040e99ddc198045b627.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fbcore-0.12.0_a73d55075ff9d27f2900c040e99ddc198045b627.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fresco-0.12.0_472821707fef0365a2ca4213f2e06095b5eebbc1.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-fresco-0.12.0_472821707fef0365a2ca4213f2e06095b5eebbc1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-0.12.0_ddc26432a30be0d79ed17554b209fea1a2105122.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-0.12.0_ddc26432a30be0d79ed17554b209fea1a2105122.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-base-0.12.0_c04dc46168d25e714f655cd7d197409c453d94ba.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.facebook.fresco-imagepipeline-base-0.12.0_c04dc46168d25e714f655cd7d197409c453d94ba.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-appindexing-8.1.0_5a13db729b5368f0aa56f9b06a41ecd7b87db4f8.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-appindexing-8.1.0_5a13db729b5368f0aa56f9b06a41ecd7b87db4f8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-basement-8.1.0_a5526878846090605d8c546c962340f73e148dcf.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.google.android.gms-play-services-basement-8.1.0_a5526878846090605d8c546c962340f73e148dcf.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.jakewharton-butterknife-8.2.1_6710f17cf99825a322ff2a58792989b3bb3190d6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/com.jakewharton-butterknife-8.2.1_6710f17cf99825a322ff2a58792989b3bb3190d6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/converter-gson-2.0.2_00d116ed84e4e48777d5720b0f3dfd557d42ee35.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/converter-gson-2.0.2_00d116ed84e4e48777d5720b0f3dfd557d42ee35.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/gson-2.6.1_210d699d4ec702748e51a62b97ee79f7776f0559.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/gson-2.6.1_210d699d4ec702748e51a62b97ee79f7776f0559.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run-bootstrap_5b27c93b6f9c888653f02872e4d8554c05dfd089.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run_d36cc9b1dda884a6354915717bc0d49e5f5de062.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/instant-run_d36cc9b1dda884a6354915717bc0d49e5f5de062.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/internal_impl-24.1.1_408885096ff9e3f97ab531c21ba075ba70abba2e.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/internal_impl-24.1.1_408885096ff9e3f97ab531c21ba075ba70abba2e.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/library-2.4.0_66a99a486808554bb4e4f3c2d340132d856c1197.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/library-2.4.0_66a99a486808554bb4e4f3c2d340132d856c1197.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/logging-interceptor-3.3.1_179365f044a75f142686c8a4a4029252480af229.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/logging-interceptor-3.3.1_179365f044a75f142686c8a4a4029252480af229.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/main_4767c59fb7fd760477f258e9cef5c22c2407c097.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/main_4767c59fb7fd760477f258e9cef5c22c2407c097.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okhttp-3.3.1_8ed2a54ba2f5e366064444cd0fac5c497d8b7fbf.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okhttp-3.3.1_8ed2a54ba2f5e366064444cd0fac5c497d8b7fbf.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okio-1.8.0_78858104d878bcdf24257e6dab70635cd9f6ad19.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/okio-1.8.0_78858104d878bcdf24257e6dab70635cd9f6ad19.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/picasso-2.5.2_032597d390cad04db87eaf1ea1bfb90b01b846f3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/picasso-2.5.2_032597d390cad04db87eaf1ea1bfb90b01b846f3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/retrofit-2.1.0_898baf8d39bfbc02f06442891cf6b40b3facf0ec.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/retrofit-2.1.0_898baf8d39bfbc02f06442891cf6b40b3facf0ec.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/support-annotations-24.1.1_1ec389d09fbe18fc06852e9e7cd98843f733fad9.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/actual/debug/support-annotations-24.1.1_1ec389d09fbe18fc06852e9e7cd98843f733fad9.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-actual-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-actual-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/actual/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/actual/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/design/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/cardview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/recyclerview/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/android/support/v7/recyclerview/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/facebook/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/facebook/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/facebook/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/com/facebook/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/DetailActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/DetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/DetailActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/DetailActivity_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/ListingActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/MainActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/MainActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$bool.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$layout.class" />
@@ -221,127 +155,45 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/app/NasaApplication.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/app/NasaApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmentoMarsRover_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/fragmentos/FragmetoApod_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/login/FBLoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/login/FBLoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/model/Apod.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/model/Apod.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/actual/debug/folders/1/5/main/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-actual-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-actual-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-actual-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-actual-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_24_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_24_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/actual/debug/mx/peta/nasaapp/reciclerview/NasaApodViewHolder_ViewBinding.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/design/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/android/support/v7/recyclerview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/google/android/gms/appindexing/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/google/android/gms/appindexing/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/com/facebook/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/mx/peta/nasaapp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/actual/debug/mx/peta/nasaapp/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-af.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-cs.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-cs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-da.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-de.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-el.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-el.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-es.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-es.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-fi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-fi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-fr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-fr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-hu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-in.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-in.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-it.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-it.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ja.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ja.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ko.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ko.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-nb.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-nb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-nl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-nl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pt-rPT.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pt-rPT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pt.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-pt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ru.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-sk.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-sk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-sv.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-sv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-th.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-th.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-tl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-tl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-tr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-tr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-vi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-vi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rCN.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rCN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rHK.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rHK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rTW.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values-zh-rTW.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/anim.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/anim.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/color-v23.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/color-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/color.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-ldrtl-hdpi-v17.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-ldrtl-hdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable-xxxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/menu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/actual/debug/single/menu.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/bundles/actual/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/bundles/actual/debug/instant-run/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeActualDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeActualDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeActualDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeActualDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/actual/debug/manifest.crc" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/actual/debug/manifest.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/actual/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/actual/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/layout/listing_navigation_header.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/layout/listing_navigation_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-af/values-af.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ar/values-ar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-cs/values-cs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-da/values-da.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-de/values-de.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-el/values-el.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-es/values-es.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-fi/values-fi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-fr/values-fr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hi/values-hi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hr/values-hr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-hu/values-hu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-in/values-in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-it/values-it.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ja/values-ja.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ko/values-ko.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-nb/values-nb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-nl/values-nl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pl/values-pl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pt-rPT/values-pt-rPT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-pt/values-pt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-ru/values-ru.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-sk/values-sk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-sv/values-sv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-th/values-th.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-tl/values-tl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-tr/values-tr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-vi/values-vi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rCN/values-zh-rCN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rHK/values-zh-rHK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values-zh-rTW/values-zh-rTW.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/layout/listing_navigation_activity.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/layout/listing_navigation_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/menu/apod_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/menu/apod_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/actual/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/actual/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/actual/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/actual/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/actual/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-actual-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-actual-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_header.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Apod.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Apod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="nasaapp.iws" />
@@ -366,41 +218,22 @@
       <file leaf-file-name="ListingActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.4444447">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="APODDataSource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/APODDataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebooklogin.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../facebooklogin.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listing_navigation_header.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_header.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -408,48 +241,38 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="19" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="DetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/DetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="NasaApodViewHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NasaApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java">
+      <file leaf-file-name="FragmentoFavorite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoFavorite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FBLoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -457,16 +280,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_fblogin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_fblogin.xml">
+      <file leaf-file-name="FragmetoApod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentManager.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/1011f8c906a5f8f53eef8fd669fc3c2afebe04f7/support-v4-24.1.1-sources.jar!/android/support/v4/app/FragmentManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2289" column="0" selection-start-line="2289" selection-start-column="0" selection-end-line="2289" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentoMarsRover.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78571427">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="e#2141#2671#0" expanded="true" />
+                <element signature="e#2670#2671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentController.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/1011f8c906a5f8f53eef8fd669fc3c2afebe04f7/support-v4-24.1.1-sources.jar!/android/support/v4/app/FragmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="353" column="5" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="5" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -475,9 +328,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -4153,20 +4006,27 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_listing.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/listing_navigation_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragmento_apod.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragmento_mars_rover.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/mars_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_fblogin.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_header.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/SqLiteHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Apod.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragmento_favorite.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/adapter/AdapterItemList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/APODDataSource.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoFavorite.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java" />
       </list>
     </option>
   </component>
@@ -4486,6 +4346,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reciclerview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -4626,6 +4554,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nasaapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -4637,8 +4599,8 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="192.168.56.101:5555" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="device.picker.selection" value="dfdfad1e" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/Mod4Practica2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
@@ -4934,8 +4896,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="834" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4943,7 +4905,8 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2799443" sideWeight="0.5028612" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53203344" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53203344" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -4963,7 +4926,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -4984,130 +4946,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java</url>
-          <line>149</line>
+          <line>131</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/APODDataSource.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/detailactivity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listing.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="30" selection-start-line="60" selection-start-column="8" selection-end-line="61" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/detailactivity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/data/ApodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marsrover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nasa_apod_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4150944">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Rover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Camera_.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -5129,6 +4986,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5142,17 +5000,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/reciclerview/NasaApodAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5165,14 +5017,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/os/Looper.class">
@@ -5195,17 +5039,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.811321">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listing.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6603775">
@@ -5215,22 +5048,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.88235295">
-          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/listing_navigation_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../navigation 4.png">
@@ -5264,104 +5081,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragmento_apod.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.943396">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/mars_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.111111">
-          <caret line="96" column="41" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_fblogin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_header.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -5371,14 +5090,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin.png">
@@ -5391,19 +5102,293 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java">
+    <entry file="file://$PROJECT_DIR$/../facebooklogin.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/app/NasaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_fblogin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.962264">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4509804">
+          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/mars_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/listing_navigation_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/apod_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/data/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/data/ApodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/SqLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../facebooklogin.png">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1764706">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/model/Apod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listing_navigation_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7299843">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragmento_apod.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92935634">
+          <caret line="48" column="15" selection-start-line="4" selection-start-column="0" selection-end-line="48" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3918919">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="e#1135#1167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.320755">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#305#338#0" expanded="true" />
+            <element signature="e#363#398#0" expanded="true" />
+            <element signature="e#424#459#0" expanded="true" />
+            <element signature="e#483#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragmento_favorite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/adapter/AdapterItemList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/login/FBLoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/1011f8c906a5f8f53eef8fd669fc3c2afebe04f7/support-v4-24.1.1-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2208" column="0" selection-start-line="2208" selection-start-column="0" selection-end-line="2208" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/1011f8c906a5f8f53eef8fd669fc3c2afebe04f7/support-v4-24.1.1-sources.jar!/android/support/v4/app/FragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2289" column="0" selection-start-line="2289" selection-start-column="0" selection-end-line="2289" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/1011f8c906a5f8f53eef8fd669fc3c2afebe04f7/support-v4-24.1.1-sources.jar!/android/support/v4/app/FragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="353" column="5" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/ListingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/reciclerview/NasaApodViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/SQL/APODDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+          <folding>
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmetoApod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoFavorite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/peta/nasaapp/fragmentos/FragmentoMarsRover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78571427">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#2141#2671#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

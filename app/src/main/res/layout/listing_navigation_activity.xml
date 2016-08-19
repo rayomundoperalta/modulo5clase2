@@ -29,4 +29,5 @@
         android:id="@+id/listing_navigation_view"
         app:headerLayout="@layout/listing_navigation_header"
         app:menu="@menu/listing_navigation_menu"/>
+
 </android.support.v4.widget.DrawerLayout>

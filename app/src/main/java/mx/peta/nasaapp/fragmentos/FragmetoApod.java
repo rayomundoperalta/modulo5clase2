@@ -22,6 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import mx.peta.nasaapp.BuildConfig;
 import mx.peta.nasaapp.R;
+import mx.peta.nasaapp.SQL.APODDataSource;
 import mx.peta.nasaapp.data.ApodService;
 import mx.peta.nasaapp.data.Data;
 import mx.peta.nasaapp.model.Apod;
@@ -39,17 +40,22 @@ public class FragmetoApod extends Fragment {
     @BindView(R.id.frag_apod_explicacion) TextView explicacion;
     @BindView(R.id.frag_apod_copyright) TextView copyright;
     private String imageurl;
+    Apod apod;
+    APODDataSource apodDs;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        apodDs = new APODDataSource(getContext());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragmento_apod, container, false);
         ButterKnife.bind(this, view);
+
+        apod = new Apod();
 
         // Log.d("Frag Apod", BuildConfig.BUILD_TYPE + " " + BuildConfig.URL);
         // Toast.makeText(getApplicationContext(),"arranque",Toast.LENGTH_SHORT).show();
@@ -68,6 +74,7 @@ public class FragmetoApod extends Fragment {
                 explicacion.setText(response.body().getExplanation());
                 copyright.setText("(C) " + response.body().getCopyright());
                 imageurl = response.body().getUrl();
+                apod = response.body();
             }
 
             @Override
@@ -82,10 +89,13 @@ public class FragmetoApod extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.share_today_apod:
-                Snackbar.make(getView(), "Menu share today", Snackbar.LENGTH_LONG).show();
+                //Snackbar.make(getView(), "Menu share today", Snackbar.LENGTH_SHORT).show();
                 shareText("Diplomado Unam " + imageurl);
                 return true;
-
+            case R.id.favorito:
+                //Snackbar.make(getView(), "Agregando a favoritos", Snackbar.LENGTH_SHORT).show();
+                apodDs.writeAPOD(apod);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -103,5 +113,11 @@ public class FragmetoApod extends Fragment {
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT, text);
         startActivity(Intent.createChooser(shareIntent, "compartir"));
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        apodDs.close();
     }
 }
