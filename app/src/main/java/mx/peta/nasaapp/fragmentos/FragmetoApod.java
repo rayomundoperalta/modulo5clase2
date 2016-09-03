@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+//import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -67,7 +67,7 @@ public class FragmetoApod extends Fragment {
         callApodService.enqueue(new Callback<Apod>() {
             @Override
             public void onResponse(Call<Apod>  call, Response<Apod> response) {
-                Log.d("APOD", response.body().getTitle());
+                //Log.d("APOD", response.body().getTitle());
                 Picasso.with(getContext()).load(response.body().getUrl()).into(imagen);
                 titulo.setText(response.body().getTitle());
                 fecha.setText(response.body().getDate());

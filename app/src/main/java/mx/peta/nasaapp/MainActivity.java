@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+//import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         //copyright = (TextView) findViewById(R.id.copyright);
 
 
-        Log.d("Build Config", BuildConfig.BUILD_TYPE + " " + BuildConfig.URL);
+        //Log.d("Build Config", BuildConfig.BUILD_TYPE + " " + BuildConfig.URL);
         Toast.makeText(getApplicationContext(), "arranque", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), ListingActivity.class);
         startActivity(intent);

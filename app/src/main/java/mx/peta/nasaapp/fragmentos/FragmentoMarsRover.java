@@ -9,7 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
+//import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -60,7 +60,7 @@ public class FragmentoMarsRover extends Fragment {
             @Override
             public void onItemClick(Photo photo) {
 
-                Log.d("tag", photo.getImgSrc());
+                //Log.d("tag", photo.getImgSrc());
                 // En este punto conocesmos al objeto que se le dio click
                 Intent intent = new Intent(getActivity(), DetailActivity.class);
 
@@ -79,7 +79,7 @@ public class FragmentoMarsRover extends Fragment {
         callMarsRovesImages.enqueue(new Callback<MarsRoverImages2>() {
             @Override
             public void onResponse(Call<MarsRoverImages2> call, Response<MarsRoverImages2> response) {
-                Log.d("MarsRoverImages2", "fotos del mars rovers");
+                // Log.d("MarsRoverImages2", "fotos del mars rovers");
                 nasaApodAdapter.setMarsPhotos(response.body().getPhotos());
                 //marsRoverListingRecycler.setAdapter(new NasaApodAdapter(response.body().getPhotos()));
                 marsRoverListingRecycler.setAdapter(nasaApodAdapter);

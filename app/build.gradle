@@ -16,12 +16,12 @@ android {
     signingConfigs {
         debug.initWith(signingConfigs.debug)
         release {
-            /*
-            storeFile file("release.keystore")
-            storePassword"secretpassword"
-            keyAlias"gradlefoeandroid"
-            keyPassword"secretpassword"
-             */
+
+            storeFile file("/Users/rayo/keyStore.jks")
+            storePassword"Samahil14200"
+            keyAlias"keyStoreSamahil14200"
+            keyPassword"Samahil14200"
+
         }
     }
 

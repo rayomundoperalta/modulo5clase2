@@ -17,7 +17,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
-import android.util.Log;
+//import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -75,8 +75,8 @@ public class ListingActivity extends AppCompatActivity {
                     userImage.setImageURI("http://graph.facebook.com/" + object.getString("id") + "/picture?type=large");
                     TextView userName = (TextView) findViewById(R.id.simpleDrawer_textview);
                     userName.setText(object.getString("name"));
-                    Log.d("name", object.getString("name"));
-                    Log.d("id", object.getString("id"));
+                    //Log.d("name", object.getString("name"));
+                    //Log.d("id", object.getString("id"));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

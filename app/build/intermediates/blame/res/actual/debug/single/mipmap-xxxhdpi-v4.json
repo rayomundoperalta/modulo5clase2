@@ -2,5 +2,9 @@
     {
         "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
         "source": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/rayo/modulo5clase2/nasaapp/app/build/intermediates/res/merged/actual/debug/mipmap-xxxhdpi-v4/ic_spaceimage.png",
+        "source": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/mipmap-xxxhdpi/ic_spaceimage.png"
     }
 ]

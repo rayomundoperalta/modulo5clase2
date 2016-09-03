@@ -6796,11 +6796,11 @@
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 202,
+                        "startOffset": 284,
                         "endColumn": 62,
-                        "endOffset": 260
+                        "endOffset": 342
                     }
                 }
             },
@@ -6815,11 +6815,11 @@
                 "from": {
                     "file": "/Users/rayo/modulo5clase2/nasaapp/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 129,
+                        "startOffset": 211,
                         "endColumn": 71,
-                        "endOffset": 196
+                        "endOffset": 278
                     }
                 }
             },

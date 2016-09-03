@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
+//import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,8 +59,8 @@ public class APODDataSource {
                 values.put(SqLiteHelper.APP_SERVICE_VERSION, apod.getServiceVersion());
                 values.put(SqLiteHelper.APP_TITLE, apod.getTitle());
                 values.put(SqLiteHelper.APP_URL, apod.getUrl());
-                Log.d("SQL", apod.getExplanation());
-                Log.d("SQL", apod.getUrl());
+                //Log.d("SQL", apod.getExplanation());
+                //Log.d("SQL", apod.getUrl());
                 db.insert(SqLiteHelper.APP_TABLE_NAME, null, values);
                 db.setTransactionSuccessful();
             } finally {
