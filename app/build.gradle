@@ -9,8 +9,8 @@ android {
         applicationId "mx.peta.nasaapp"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
     }
 
     signingConfigs {

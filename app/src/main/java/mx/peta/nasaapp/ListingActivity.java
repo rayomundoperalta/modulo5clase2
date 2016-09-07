@@ -5,6 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
@@ -41,6 +42,7 @@ import mx.peta.nasaapp.data.Data;
 import mx.peta.nasaapp.fragmentos.FragmentoFavorite;
 import mx.peta.nasaapp.fragmentos.FragmentoMarsRover;
 import mx.peta.nasaapp.fragmentos.FragmetoApod;
+import mx.peta.nasaapp.internet.InternetConection;
 import mx.peta.nasaapp.model.MarsRoverImages2;
 import mx.peta.nasaapp.model.Photo;
 import mx.peta.nasaapp.reciclerview.NasaApodAdapter;
@@ -52,7 +54,8 @@ public class ListingActivity extends AppCompatActivity {
 
     //@BindView(R.id.recyclerView)
     //RecyclerView marsRoverListingRecycler;
-    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.listing_navigation_view)
     NavigationView navigationView;
     @BindView(R.id.listing_navigation_drawer)
@@ -66,6 +69,20 @@ public class ListingActivity extends AppCompatActivity {
         // setContentView(R.layout.activity_listing);
         setContentView(R.layout.listing_navigation_activity);
         ButterKnife.bind(this);
+
+        InternetConection iC = new InternetConection();
+
+        if (!iC.isNetworkAvailable(getApplicationContext())) {
+            Snackbar.make(findViewById(android.R.id.content), "No hay conexion a Internet", Snackbar.LENGTH_LONG).show();
+            Handler h = new Handler();
+            // new Handler()
+            h.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    finish();
+                }
+            }, 1000 * 4);
+        }
 
         GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
             @Override
